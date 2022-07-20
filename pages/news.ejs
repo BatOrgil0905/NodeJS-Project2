@@ -1,0 +1,23 @@
+<%- include('includes/head') %>
+<main class="w-full h-screen bg-gradient-to-t from-purple-300 to-blue-300 flex flex-col justify-center items-center">
+    <h2 class="text-4xl mb-4 cursor-default">Шинэ Мэдээ</h2>
+    <form class="w-[420px] p-4 rounded-lg bg-white" action="/news" method="post">
+        <label class="mb-2 text-xl" for="title">Title</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="title" id="title" placeholder="Title">
+    
+        <label class="mb-2 text-xl" for="avatar">Avatar</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="avatar" id="avatar" placeholder="Avatar">
+    
+        <label class="mb-2 text-xl" for="description">Description</label>
+        <textarea class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="description" id="description" placeholder="Description"></textarea>
+
+        <!-- <label class="mb-2 text-xl" for="sort">Sorting</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="sort" id="sort" placeholder="Sort"> -->
+    
+        <input class="py-2 px-4 bg-blue-200 text-black rounded-md w-full border mb-4 cursor-pointer duration-300 hover:bg-blue-500 hover:text-white" type="submit" value="Үүсгэх">
+        
+    </form>
+    <!-- <a href="/"><button class="w-[420px] my-3 py-1 bg-gray-100 rounded-md cursor-pointer duration-300 hover:bg-gray-200">Back</button></a> -->
+</main>
+
+<%- include('includes/foot') %>

@@ -1,0 +1,20 @@
+<%- include('includes/head') %>
+<main class="w-full h-screen bg-gradient-to-t from-blue-300 to-green-300 flex flex-col justify-center items-center">
+    <h2 class="text-4xl mb-4 cursor-default">Login</h2>
+    <form class="w-[370px] p-4 rounded-lg bg-white" action="/login" method="post">
+        <label class="mb-2 text-xl" for="username">Username</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="username" id="username" placeholder="Username">
+    
+        <label class="mb-2 text-xl" for="email">Email</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="email" id="email" placeholder="Email">
+    
+        <label class="mb-2 text-xl" for="password">Password</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="password" name="passwords" id="password" placeholder="Password">
+    
+        <input class="py-2 px-4 bg-blue-200 text-black rounded-md w-full border mb-4 cursor-pointer duration-300 hover:bg-blue-500 hover:text-white" type="submit" value="Нэвтрэх">
+        
+    </form>
+    <!-- <a href="/"><button class="w-[370px] my-3 py-1 bg-gray-100 rounded-md cursor-pointer duration-300 hover:bg-gray-200">Back</button></a> -->
+</main>
+
+<%- include('includes/foot') %>

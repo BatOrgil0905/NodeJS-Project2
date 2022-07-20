@@ -1,0 +1,20 @@
+<%- include('includes/head') %>
+    <main class="w-full h-screen bg-gradient-to-t from-purple-300 to-blue-300 flex flex-col justify-center items-center">
+    <h2 class="text-4xl mb-4 cursor-default">Мэдээг засах</h2>
+    <form class="w-[500px] p-4 rounded-lg bg-white" action="/edit/<%= updateNews._id %>" method="post">
+        <label class="mb-2 text-xl" for="title">Title</label>
+        <input value="<%= updateNews.title %>" class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="title" id="title" placeholder="Title">
+    
+        <label class="mb-2 text-xl" for="avatar">Avatar</label>
+        <input value="<%= updateNews.avatar %>" class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="avatar" id="avatar" placeholder="Avatar">
+    
+        <label class="mb-2 text-xl" for="description">Description</label>
+        <textarea class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="description" id="description" placeholder="Description"><%= updateNews.description %></textarea>
+
+        <!-- <label class="mb-2 text-xl" for="sort">Sorting</label>
+        <input class="py-2 px-4 bg-gray-50 rounded-md w-full border mb-4" type="text" name="sort" id="sort" placeholder="Sort"> -->
+    
+        <input class="py-2 px-4 bg-blue-200 text-black rounded-md w-full border mb-4 cursor-pointer duration-300 hover:bg-blue-500 hover:text-white" type="submit" value="Засах">   
+    </form>
+</main>
+<%- include('includes/foot') %>

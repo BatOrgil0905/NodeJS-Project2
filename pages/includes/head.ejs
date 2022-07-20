@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- -- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7f5ac2c1d4.js" crossorigin="anonymous"></script>
+    <!-- ---Font--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title><%= pageTitle %></title>
+</head>
+<body class="">
+    <!-- ---Header -->
+    <!-- ---Top--- -->
+    <nav>
+        <div class="flex bg-red-800 border-b border-black px-[7%] sm:text-md text-sm text-white flex-row justify-between">
+            <ul class="flex flex-row">
+                <a href="/">
+                    <li class="py-1 px-2 border-r border-black duration-300 cursor-pointer hover:bg-red-900 ">About us</li>
+                </a>
+                <a href="/">
+                    <li class="py-1 px-2 border-r border-black duration-300 cursor-pointer hover:bg-red-900 ">Advertisement</li>
+                </a>
+                <a href="/">
+                    <li class="py-1 px-2 duration-300 cursor-pointer hover:bg-red-900 ">Contact us</li>
+                </a>
+            </ul>
+            <ul class="flex items-center justify-end">
+                <a href="https://www.facebook.com/ulstor.mn">
+                    <li class="py-1 px-2 border-r border-black duration-300 cursor-pointer hover:bg-red-900">Facebook</li>
+                </a>
+                <a href="/">
+                    <li class="py-1 px-2 duration-300 cursor-pointer hover:bg-red-900">Twitter</li>
+                </a>
+            </ul>
+        </div>
+        <!-- ---Middle--- -->
+        <div class="flex justify-between bg-red-600 py-4 px-[7%] text-white md:px:16">
+            <div class="flex">
+                <a href="/">
+                    <img class="py-4 w-42" src="https://www.ulstor.mn/style/images/UlsTor-Logo.png" alt="">
+                </a>
+            </div>
+            <div class=" lg:flex lg:items-center lg:justify-end block md:hidden sm:hidden">
+                <input class="w-[200px] pl-2 py-1 text-black italic relative" id="search" type="text" placeholder="Xайх утга...">
+                <label class="absolute cursor-pointer" for="search">
+                    <i class="fas fa-search  text-black pr-2"></i>
+                </label>
+            </div>
+        </div>
+        <!-- ---Bottom--- -->
+        <div class="flex bg-black flex-row font-semibold px-[7%] sm:text-sm text-xs text-white">
+            <a href="/" class="border-r border-white px-3 py-1 sm:text-md text-sm uppercase duration-300 hover:bg-red-700">Нүүр Хуудас</a>
+            <a href="/loginUser" class="border-r border-white px-3 py-1 sm:text-md text-sm uppercase duration-300 hover:bg-red-700">Нэвтрэх Хуудас</a>
+            <a href="/" class="border-r border-white px-3 py-1 sm:text-md text-sm uppercase duration-300 hover:bg-red-700">Уран зураг</a>
+            <a href="/news" class="border-r border-white px-3 py-1 sm:text-md text-sm uppercase duration-300 hover:bg-red-700">Шинэ Мэдээ</a>
+        </div>
+    </nav>

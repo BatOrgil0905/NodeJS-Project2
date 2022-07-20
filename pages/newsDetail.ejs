@@ -1,0 +1,11 @@
+<%- include('includes/head') %>
+<main class="bg-gradient-to-b from-sky-400 to-purple-500 p-8">
+    <div class="mx-[7%]">
+        <h1 class="py-1 font-semibold text-2xl text-center border-b border-purple-600 border-t"><%= newsDetail.title %></h1>
+    </div>
+    <div class="my-4 flex flex-col md:flex-row">
+        <img class="w-full h-7/8 md:w-full md:h-72 mx-auto md:mx-0" src="<%= newsDetail.avatar %>" alt="">
+        <p class="mx-2 my-6 md:my-0"><%= newsDetail.description %></p>
+    </div>
+</main>
+<%- include('includes/foot') %>
